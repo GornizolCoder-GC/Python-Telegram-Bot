@@ -1,0 +1,16 @@
+1." python -m venv env " cmd 
+2." pip install python-telegram-bot "  cmd
+3." pip freeze > requirements.txt "  cmd
+4. open IDLE in this project (for example pycharm)
+5. setting > add venv for interpretator
+6. create main.py
+7. open @BotFather on the telegram and take Bot API token.
+8. write belongs to main.py:
+
+>>> import telegram 
+>>> bot = telegram.Bot(token='TOKEN')
+
+>>> print(bot.get_me())
+
+>>> updates = bot.get_updates()
+>>> print(updates[0])
